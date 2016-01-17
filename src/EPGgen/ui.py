@@ -4,6 +4,7 @@ import enigma
 from Screens.Screen import Screen
 from Components.Label import Label
 from Components.ActionMap import ActionMap
+from Components.ConfigList import ConfigListScreen
 
 
 ##################################
@@ -26,18 +27,17 @@ class EPGgenConfig(ConfigListScreen, Screen):
         </screen>"""
     else:
         skin = """
-        <screen position="center,center" size="600,500" \
+        <screen position="center,center" size="600,430" \
             title="EPGgen Configuration SD skin" >
         <widget name="myLabel" position="10,60" \
             size="200,40" font="Regular;20"/>
         </screen>"""
 
-
-def __init__(self, session, args=None):
-    self.session = session
-    Screen.__init__(self, session)
-    self["myLabel"] = Label("Hello World ;-)")
-    self["myActionMap"] = ActionMap(["SetupActions"],
-        {
+    def __init__(self, session, args=None):
+        self.session = session
+        Screen.__init__(self, session)
+        self["myLabel"] = Label("Hello World ;-)")
+        self["myActionMap"] = ActionMap(["SetupActions"],
+                                        {
             "cancel": self.close  # RC Command "cancel" to close your Screen
         }, -1)
