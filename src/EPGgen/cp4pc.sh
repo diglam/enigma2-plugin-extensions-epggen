@@ -12,4 +12,6 @@ cp -R ./__init__.py /usr/local/e2/lib/enigma2/python/Plugins/Extensions/EPGgen
 
 cp -R ./plugin.py /usr/local/e2/lib/enigma2/python/Plugins/Extensions/EPGgen
 
-cp -R ./ui.py /usr/local/e2/lib/enigma2/python/Plugins/Extensions/EPGgen
+#cp -R ./ui.py /usr/local/e2/lib/enigma2/python/Plugins/Extensions/EPGgen
+
+#cp -R ./fn.py /usr/local/e2/lib/enigma2/python/Plugins/Extensions/EPGgen
