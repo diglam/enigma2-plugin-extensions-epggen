@@ -4,8 +4,8 @@ from Tools.Directories import resolveFilename, SCOPE_PLUGINS
 # import os
 import gettext
 
-PluginLanguageDomain = "EPGgen"
-PluginLanguagePath = "Extensions/EPGgen/locale"
+PluginLanguageDomain = "EPGregen"
+PluginLanguagePath = "Extensions/EPGregen/locale"
 
 
 def localeinit():
