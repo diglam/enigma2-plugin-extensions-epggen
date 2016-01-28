@@ -1,1 +1,1 @@
-# enigma2-plugin-extensions-epggen
+# enigma2-plugin-extensions-epgregen
